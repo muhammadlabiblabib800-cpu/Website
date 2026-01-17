@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedas Nusantara - Restoran Makanan Pedas Level</title>
+    <meta name="description" content="Restoran makanan pedas level 1-5 di Lamongan. Siap tantang lidahmu!">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-pepper-hot"></i>
+                    <span>Pedas Nusantara</span>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">Tentang</a>
+                    <a href="#menu" class="nav-link">Menu</a>
+                    <a href="#gallery" class="nav-link">Galeri</a>
+                    <a href="#testimonial" class="nav-link">Testimoni</a>
+                    <a href="#contact" class="nav-link">Kontak</a>
+                </div>
+                
+                <div class="nav-extras">
+                    <button class="dark-mode-toggle" id="darkModeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up">
+            <h1 class="hero-title">Pedas Nusantara</h1>
+            <p class="hero-tagline">Berani Pedas? Tantang Level Kepedasanmu!</p>
+            <p class="hero-subtitle">Restoran makanan pedas dengan 5 level tantangan yang menguji nyali lidahmu</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+                <a href="#" class="btn btn-secondary" id="orderWA">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Tentang Kami</span>
+                <h2 class="section-title">Pedas Nusantara Story</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800" alt="Restoran Pedas Nusantara">
+                    <div class="about-badge">
+                        <span class="badge-year">2017</span>
+                        <span class="badge-text">Tahun Berdiri</span>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <p>Pedas Nusantara hadir sejak 2017 sebagai destinasi kuliner bagi para pecinta pedas sejati. Berlokasi di jantung Mantup, Lamongan, Jawa Timur, kami menghadirkan pengalaman kuliner pedas yang tak terlupakan dengan sistem level 1 hingga 5.</p>
+                    
+                    <p>Setiap hidangan kami dibuat dengan bumbu rempah pilihan dan cabai berkualitas tinggi yang diracik oleh chef berpengalaman. Kami bangga menyajikan cita rasa pedas autentik Nusantara yang memanjakan lidah sekaligus menantang adrenalin Anda.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-fire"></i>
+                            <div>
+                                <h4>Level 1-5</h4>
+                                <p>Pilih tingkat kepedasan sesuai keberanianmu</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Operasional</h4>
+                                <p>Setiap Hari: 07.00 - 22.00 WIB</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Best Quality</h4>
+                                <p>Bahan segar & bumbu premium</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Menu Kami</span>
+                <h2 class="section-title">Pilihan Menu Pedas</h2>
+            </div>
+            
+            <!-- Menu Categories -->
+            <div class="menu-categories" data-aos="fade-up">
+                <button class="category-btn active" data-category="all">Semua Menu</button>
+                <button class="category-btn" data-category="pedas">Menu Pedas</button>
+                <button class="category-btn" data-category="minuman">Minuman</button>
+                <button class="category-btn" data-category="snack">Snack</button>
+            </div>
+            
+            <!-- Best Seller -->
+            <div class="bestseller-section" data-aos="fade-up">
+                <h3 class="bestseller-title">
+                    <i class="fas fa-crown"></i> Best Seller
+                </h3>
+                <div class="menu-grid">
+                    <div class="menu-card bestseller" data-category="pedas">
+                        <div class="menu-badge">Best Seller</div>
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=500" alt="Ayam Geprek Level 5">
+                        </div>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Ayam Geprek Level 5</h4>
+                            <div class="spicy-level">
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                            </div>
+                            <p class="menu-desc">Ayam crispy dengan sambal level maut yang bikin ketagihan</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 28.000</span>
+                                <button class="btn-order" data-menu="Ayam Geprek Level 5" data-price="28000">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-card bestseller" data-category="pedas">
+                        <div class="menu-badge">Best Seller</div>
+                        <div class="menu-image">
+                            <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=500" alt="Mie Goreng Jeletot">
+                        </div>
+                        <div class="menu-content">
+                            <h4 class="menu-name">Mie Goreng Jeletot</h4>
+                            <div class="spicy-level">
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                                <i class="fas fa-pepper-hot"></i>
+                            </div>
+                            <p class="menu-desc">Mie goreng super pedas dengan topping komplit</p>
+                            <div class="menu-footer">
+                                <span class="menu-price">Rp 22.000</span>
+                                <button class="btn-order" data-menu="Mie Goreng Jeletot" data-price="22000">Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Regular Menu -->
+            <div class="menu-grid">
+                <!-- Menu Pedas Level 1 -->
+                <div class="menu-card" data-category="pedas" data-aos="fade-up">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=500" alt="Ayam Geprek Level 1">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Ayam Geprek Level 1</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Untuk pemula, pedas ringan yang nikmat</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 18.000</span>
+                            <button class="btn-order" data-menu="Ayam Geprek Level 1" data-price="18000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Pedas Level 2 -->
+                <div class="menu-card" data-category="pedas" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1633504581786-316c8002b1b7?w=500" alt="Ayam Geprek Level 2">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Ayam Geprek Level 2</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Mulai berasa sensasi pedasnya</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 20.000</span>
+                            <button class="btn-order" data-menu="Ayam Geprek Level 2" data-price="20000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Pedas Level 3 -->
+                <div class="menu-card" data-category="pedas" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500" alt="Ayam Geprek Level 3">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Ayam Geprek Level 3</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Pedas sedang untuk yang sudah terbiasa</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 23.000</span>
+                            <button class="btn-order" data-menu="Ayam Geprek Level 3" data-price="23000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Menu Pedas Level 4 -->
+                <div class="menu-card" data-category="pedas" data-aos="fade-up">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=500" alt="Ayam Geprek Level 4">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Ayam Geprek Level 4</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Tantangan untuk pecinta pedas sejati</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 25.000</span>
+                            <button class="btn-order" data-menu="Ayam Geprek Level 4" data-price="25000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Minuman -->
+                <div class="menu-card" data-category="minuman" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=500" alt="Es Teh Manis">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Es Teh Manis</h4>
+                        <p class="menu-desc">Minuman segar untuk meredakan pedas</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 5.000</span>
+                            <button class="btn-order" data-menu="Es Teh Manis" data-price="5000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="minuman" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=500" alt="Es Jeruk">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Es Jeruk Peras</h4>
+                        <p class="menu-desc">Jeruk segar alami</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 8.000</span>
+                            <button class="btn-order" data-menu="Es Jeruk Peras" data-price="8000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="minuman" data-aos="fade-up">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1624880357913-a8539238245b?w=500" alt="Es Kelapa Muda">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Es Kelapa Muda</h4>
+                        <p class="menu-desc">Kelapa muda segar penghilang pedas</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 12.000</span>
+                            <button class="btn-order" data-menu="Es Kelapa Muda" data-price="12000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Snack -->
+                <div class="menu-card" data-category="snack" data-aos="fade-up" data-aos-delay="100">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=500" alt="Cireng Pedas">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Cireng Pedas</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Cireng crispy dengan bumbu pedas</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 10.000</span>
+                            <button class="btn-order" data-menu="Cireng Pedas" data-price="10000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="snack" data-aos="fade-up" data-aos-delay="200">
+                    <div class="menu-image">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=500" alt="Tahu Crispy">
+                    </div>
+                    <div class="menu-content">
+                        <h4 class="menu-name">Tahu Crispy Pedas</h4>
+                        <div class="spicy-level">
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <p class="menu-desc">Tahu goreng crispy balutan sambal</p>
+                        <div class="menu-footer">
+                            <span class="menu-price">Rp 12.000</span>
+                            <button class="btn-order" data-menu="Tahu Crispy Pedas" data-price="12000">Pesan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Galeri</span>
+                <h2 class="section-title">Momen Pedas Kami</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600" alt="Suasana Restoran">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600" alt="Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?w=600" alt="Menu Ayam Geprek">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in">
+                    <img src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?w=600" alt="Mie Goreng">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=600" alt="Chef Cooking">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=600" alt="Happy Customers">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Testimoni</span>
+                <h2 class="section-title">Apa Kata Mereka</h2>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Ayam geprek level 5 nya gila sih! Benar-benar tantangan buat pecinta pedas. Sambalnya nampol banget dan ayamnya crispy. Recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=12" alt="Budi Santoso">
+                            <div>
+                                <h4>Budi Santoso</h4>
+                                <p>Lamongan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Tempat favorit kalau lagi pengen makan pedas! Mie goreng jeletot nya juara, pedasnya pas dan porsinya banyak. Harga juga terjangkau."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=5" alt="Siti Nurhaliza">
+                            <div>
+                                <h4>Siti Nurhaliza</h4>
+                                <p>Surabaya</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Pelayanannya ramah, tempatnya bersih dan nyaman. Level 3 sudah cukup bikin keringetan, tapi nagih! Pasti balik lagi."</p>
+                        <div class="testimonial-author">
+                            <img src="https://i.pravatar.cc/100?img=33" alt="Ahmad Rifai">
+                            <div>
+                                <h4>Ahmad Rifai</h4>
+                                <p>Gresik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-btn" id="prevTestimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="testimonial-btn" id="nextTestimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Hubungi Kami</span>
+                <h2 class="section-title">Lokasi & Kontak</h2>
+            </div>
+            
+            <div class="contact-wrapper">
+                <!-- Map -->
+                <div class="contact-map" data-aos="fade-right">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126655.89093633887!2d112.33639205!3d-7.116864799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77f5eab9fb3a69%3A0x401576d14fed2c0!2sMantup%2C%20Kec.%20Mantup%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1234567890123!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                
+                <!-- Contact Info & Form -->
+                <div class="contact-content" data-aos="fade-left">
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Alamat</h4>
+                                <p>Jl. Raya Mantup No. 123<br>Mantup, Lamongan, Jawa Timur 62263</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p><a href="https://wa.me/6283105817415" target="_blank">+6283105817415</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Jam Buka</h4>
+                                <p>Setiap Hari: 07.00 - 22.00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <h3>Kirim Pesan</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="No. WhatsApp" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="4" placeholder="Pesan Anda" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-pepper-hot"></i>
+                        <span>Pedas Nusantara</span>
+                    </div>
+                    <p>Restoran makanan
+                    <p>Restoran makanan pedas terbaik di Lamongan dengan 5 level tantangan kepedasan. Berani coba?</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Menu Cepat</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#testimonial">Testimoni</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Mantup, Lamongan, Jawa Timur</li>
+                        <li><i class="fas fa-phone"></i> +62 812-3456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@pedasnusantara.com</li>
+                        <li><i class="fas fa-clock"></i> 07.00 - 22.00 WIB</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Dapatkan info promo dan menu terbaru!</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Anda">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pedas Nusantara. All Rights Reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for Spicy Lovers</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6283105817415?text=Halo%20Pedas%20Nusantara,%20saya%20ingin%20pesan%20menu" 
+       class="whatsapp-float" 
+       target="_blank"
+       title="Chat via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
